@@ -26,7 +26,7 @@ public class BoreshaSacco implements Bank {
             withdrawals +=amount -interestRate(amount);
             System.out.println("Withdrawal amount: " + this.withdrawals);
         } else {
-            throw new IllegalArgumentException("Insufficent funds");
+            throw new IllegalArgumentException("Insufficient funds");
         }
     }
     public double interestRate(double amount) {
